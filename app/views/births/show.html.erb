@@ -1,0 +1,14 @@
+<style>
+  h1 {text-align:center;}
+  h3 {text-align:center;}
+</style>
+
+<h1><%= (@birth.due_date - Date.today).to_i %> Days to Go!</h1>
+<h3>Due on <%= @birth.due_date %></h3>
+
+<% if current_user %>
+  <div>This is what people will see when they go to the link you give them.</div>
+  <%= link_to 'Back', births_path %>
+<% else %>
+  <%= link_to 'Stork Patrol', root_url %>
+<% end %>

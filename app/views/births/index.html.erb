@@ -1,0 +1,14 @@
+<p>
+  <strong>Due Date</strong>
+  <table>
+    <% @births.each do |birth| %>
+      <tr>
+        <td><%= birth.due_date %></td>
+        <td><%= link_to 'Edit', edit_birth_path(birth) %></td>
+        <td><%= birth_url(birth) %></td>
+        <td><%= link_to 'Preview', birth_path(birth) %></td>
+      </tr>
+    <% end %>
+  </table>
+</p>
+<%= link_to 'Add Birth', new_birth_path %>
