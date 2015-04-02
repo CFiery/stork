@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# mysql
+gem 'mysql2'
+
 # OAuth
 gem 'omniauth'
 gem 'omniauth-facebook'
