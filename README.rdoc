@@ -1,3 +1,5 @@
+This is the app you're looking for.
+
 == README
 
 This README would normally document whatever steps are necessary to get the
